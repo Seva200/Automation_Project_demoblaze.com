@@ -10,8 +10,7 @@ class Drivers:
     def get_chrome_driver(self):
         options = webdriver.ChromeOptions()
         options.add_argument("--disable-extensions")
-        service = SC(executable_path="C:/WebDrivers/chromedriver_win32/chromedriver.exe")
-        self.driver = webdriver.Chrome(service=service, options=options)
+        self.driver = webdriver.Chrome(options=options)
 
         return self.driver
 
