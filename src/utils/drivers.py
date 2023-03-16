@@ -18,8 +18,7 @@ class Drivers:
     def get_edge_driver(self):
         options = webdriver.EdgeOptions()
         options.add_argument("--disable-extensions")
-        service = SE(executable_path="C:/WebDrivers/edgedriver_win32/msedgedriver.exe")
-        self.driver = webdriver.Edge(service=service, options=options)
+        self.driver = webdriver.Edge(options=options)
 
         return self.driver
 
