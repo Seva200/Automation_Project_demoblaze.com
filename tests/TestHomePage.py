@@ -5,6 +5,7 @@ from src.utils.DriverSetUp import DriverSetUp
 
 class TestHomePage(DriverSetUp):
 
+# Header
     def test_home_btn(self, driver):
         self.home_page.home_btn_click()
         assert driver.current_url == "https://www.demoblaze.com/index.html"
@@ -29,3 +30,11 @@ class TestHomePage(DriverSetUp):
     def test_logo_btn(self, driver):
         self.home_page.logo_btn_click()
         assert driver.current_url == "https://www.demoblaze.com/index.html"
+
+# Slide Show
+    def test_right_arrow_btn(self, driver):
+        self.home_page.right_arrow_click()
+        assert self.driver.find_element(By.CSS_SELECTOR, "#carouselExampleIndicators > ol > li.active")\
+                   .get_attribute("class") == "active"
+
+    
