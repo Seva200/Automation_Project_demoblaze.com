@@ -75,4 +75,4 @@ class TestHomePage(DriverSetUp):
     def test_item_btn(self, driver):
         self.home_page.item_click()
         assert self.driver.current_url == "https://www.demoblaze.com/prod.html?idp_=1"
-    
+
