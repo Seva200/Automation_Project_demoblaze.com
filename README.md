@@ -25,19 +25,3 @@ You are welcomed to dig in our project and look for the tests and bugs
 * Tests folder contains the test suites and test cases for each requirement 
 * utils.py is a file which takes in the imports 
 * locators.py is a file which indexes elements in the webpage
-
-## Errors we found
-<ol>
-    <li>UI issues:
-    <ol>
-        <li>
-        Product Page: <br>
-        <div style="display: inline-block">
-            <img src="media/bugs_product_ui_slideshow.png" width="600"> <br>
-            <img src="media/bugs_product_ui_resp1.png" width="600"> <br>
-            <img src="media/bugs_product_ui_resp2.png" width="600">
-        </div>
-        </li>      
-    </ol>
-    </li>
-</ol>
